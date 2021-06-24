@@ -1,0 +1,85 @@
+@mixin desktopStyle {
+  #intro-section {
+    height: 75vh;
+
+    & div.wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & #intro-logo {
+        max-width: 500px;
+      }
+    }
+  }
+
+  #about-section {
+    padding: 100px 0px;
+
+    .body-copy {
+      font-size: 20px;
+      line-height: 1.4em;
+    }
+
+    & #about-section-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    & div.wrapper {
+      flex-wrap: wrap;
+      & .twoCol {
+        & h3 {
+          font-size: 50px;
+          letter-spacing: 0.1em;
+        }
+      }
+
+      & .accent-text {
+        color: $redOrange;
+        font-style: italic;
+      }
+    }
+  }
+
+  #featured-projects-section {
+    min-height: 50vh;
+    padding: 150px 0 0 0;
+
+    & #featured-projects-div {
+      & .project-thumb {
+        min-width: 400px;
+        height: 310px;
+      }
+    }
+  }
+
+  #capabilities-section {
+    padding-bottom: 30px;
+
+    & div.section-overlap-div {
+      top: 100px;
+
+      & #technologies-div {
+        padding: 30px;
+        min-width: 100%;
+        min-height: 60px;
+
+        & #tools-div {
+          display: flex;
+          justify-content: space-around;
+
+          & .tools-icon {
+            max-height: 70px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-section {
+    min-height: 50vh;
+    padding: 100px 0 30px 0;
+  }
+}
